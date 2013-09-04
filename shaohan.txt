@@ -1,0 +1,18 @@
+1. My experience with web archtecture:
+   I have written HTML, CSS, a liitle bit JavaScript/jQuary and PHP 
+before. I am currently taking Database class that I hope I 
+will get familiar with database management in the near future.
+
+
+2. Chrome: I like the Developer Tool and sometimes use it to find out what 
+kind of libraries the current web page is using. I especially like the 
+color indicator of the Developer Tool that user can easily understand 
+which section these codes belong to.
+
+Safari: I like the "share" feature which located next to the search bar of 
+Safari. It is convenient because when I see something interesting, I can 
+just click the share icon to share the page information on either Twitter, 
+Facebook or add to local bookmark or reading list.
+
+
+Shaohan Chen
