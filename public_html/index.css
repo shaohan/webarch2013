@@ -1,0 +1,55 @@
+/* CSS setting for nav section */
+
+#nav {
+	background-color: #ADD8E6;
+	padding: 5px;
+}
+
+#nav h1{
+	padding-left: 20px;
+	color: #B8860B;
+}
+
+#nav li {
+	display: inline;
+	margin-right: 10px;
+}
+
+
+/* CSS setting for introduction section */
+
+#introduction {
+	text-align: center;
+}
+
+.image-wrapper {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: solid 1px #ccc;
+}
+
+.image-wrapper img {
+	width: 800px;
+}
+
+
+.image-caption {
+	font-size: 18px;
+	color: #C71585;
+}
+
+
+/* hyperlink style */
+
+a {
+	color: #1fa1fa;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF1493;
+}

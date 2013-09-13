@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Shaohan's Page</title>
+        <title>Shaohan's Personal Page</title>
+        <meta charset="utf-8">
+        <!-- CSS sheets -->
+        <link rel="stylesheet" type="text/css" href="general.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-    <body>
-        <p>Hello world! This is a tiny HTML page.</p>
+
+    <body>  	
+    	<div id="nav">
+    		<h1>Shaohan's Personal Page</h1>
+    		<ul>
+    			<li><a href="#">About</a></li>
+    			<li><a href="#">Portfolio</a></li>
+    			<li><a href="#">Contact</a></li>
+    		</ul>
+    	</div><!-- close nav div -->
+    	
+    	<div id="introduction">
+    		<p style="color: #191970; padding-top: 30px; font-size: 20px;">Hello world! My name is Shaohan and I'm currently studying in UC Berkeley.</p>
+    		<p style="width: 700px; margin: auto; padding-bottom: 10px;">Phasellus at odio sollicitudin, placerat magna et, semper erat. Nulla hendrerit id risus id placerat. Etiam convallis ut quam eu dignissim. Curabitur eu arcu molestie, scelerisque nibh consequat, bibendum lacus. Vestibulum at consectetur odio. Etiam semper nulla a lectus elementum convallis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce id lectus quis nunc luctus pharetra in blandit nisi. Etiam aliquet odio ut turpis egestas, nec bibendum augue adipiscing. Morbi dui velit, rhoncus nec ligula id, condimentum sagittis sapien.</p>
+
+    		<div class="image-wrapper">
+		    	<img src="http://people.ischool.berkeley.edu/~alsmola/southhallbear/southhall.jpg" alt="southhall">
+		    	<div class="image-caption">
+                    South Hall: This is the place where I attend classes.
+                </div>
+		    </div>
+
+			<div class="image-wrapper">
+		    	<img src="https://fnec.cornell.edu/Our_Programs/FMNP/Documents/barrels_of_peppers.jpg" alt="market">
+		    	<div class="image-caption">
+                    Berkeley Farmers' Market: This is the place where I purchase food.
+                </div>
+		    </div>
+
+	   	</div><!-- close introduction div -->
+
+
+	   	<div id="favorites" style="background: #CCC; color: #888; padding-top: 5px; padding-left: 30px">
+   			<h2>My Favorite Sites:</h2>
+   			<a href="http://www.google.com/">Google</a><br>
+   			<a href="http://www.4sq.com/">Foursquare</a><br>
+   			<a href="http://www.flickr.com/">Flickr</a><br><br>    		
+   		</div><!-- close partners div -->
+
+   		<div id="footer">
+   			<p>(c)2013 Shaohan Chen. All Rights Reserved</p>         
+   		</div><!-- close footer div -->
+
     </body>
+
 </html>
