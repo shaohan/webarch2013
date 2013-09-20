@@ -6,38 +6,15 @@ function validator() {
 		$("#output_name_1").text($("#your_name").val());
 		$("#output_name_2").text($("#your_name").val());
 		$("#output_name_3").text($("#your_name").val());
-
 	} else {
 		alert("Please enter your name.");
 		return false;
 	}
+
 	
 	//validate title input
 	if ($("#title input[type='radio']:checked").val().length > 0) {
 		$("#output_title").text($("#title input[type='radio']:checked").val());
-
-	} else {
-		alert("Please select your title.");
-		return false;
-	}
-
-
-	//validate reaction
-	if ($("#reaction option:selected").val().length > 0) {
-		$("#output_reaction").text($("#reaction option:selected").val());
-	} else {
-		alert("Please choose the reaction when you see a cockroach!");
-		return false;
-	}
-
-
-	//validate occupation
-	if ($("#occupation").val().length > 0) {
-		$("#output_occupation").text($("#occupation").val());
-
-	} else {
-		alert("Please enter your occupation.");
-		return false;
 	}
 
 
@@ -50,7 +27,32 @@ function validator() {
 	}
 
 
-	//validate monster
+	//validate occupation
+	if ($("#occupation").val().length > 0) {
+		$("#output_occupation").text($("#occupation").val());
+	} else {
+		alert("Please enter your occupation.");
+		return false;
+	}
+
+
+	//validate reaction
+	if ($("#reaction option:selected").val().length > 0) {
+		$("#output_reaction").text($("#reaction option:selected").val());
+	} else {
+		alert("Please choose the reaction when you see a cockroach.");
+		return false;
+	}
+
+
+	// validate monster
+	if ($("#monster input[type='checkbox']:checked").val().length > 0) {
+		alert("Please select at least one monster.");
+		return false;
+	}
+
+
+	// fill-in monster
 	if ($("#godzilla").is(":checked")) {
 		$("#output_godzilla").text($("#godzilla").val());
 	} 

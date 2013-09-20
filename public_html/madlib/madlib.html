@@ -8,12 +8,13 @@
 	</head>
 
 	<body>
+
 		<form id="madlib-input">
 			<h3>Please full out this form to apply for an award!</h3>
 			
 			<!-- your_name -->
 			<p>
-				<label for="your_name">Your last name:</label>
+				<label for="your_name">Your name:</label>
 					<input type="text" id="your_name">
 			</p>
 
@@ -21,7 +22,7 @@
 			<p>Title:<br>
 				<span id="title">
 					<label>Ms.</label>
-						<input type="radio" name="title" value="Ms."><br>		
+						<input type="radio" name="title" value="Ms." checked="checked"><br>		
 					<label>Mr.</label>
 						<input type="radio" name="title" value="Mr."><br>
 					<label>Mrs.</label>
@@ -54,7 +55,7 @@
 
 			<!-- monster's name -->
 			<p>Which of the following monsters do you like?<br>
-				
+				<span id="monster">
 					<label for="godzilla">Godzilla</label>
 						<input type="checkbox" value="Godzilla." id="godzilla"><br>
 					<label for="kingkong">King Kong</label>
@@ -63,9 +64,10 @@
 						<input type="checkbox" value="Mothra." id="mothra"><br>
 					<label for="gamera">Gamera</label>
 						<input type="checkbox" value="Gamera." id="gamera">
+				</span><!-- close monster -->
 			</p><br>
 
-			<label>Ready? Click below to submit your application now!</label>
+			<label>Ready? Click below to submit your application now!</label><br><br>
 				<input type="submit" value="Apply">
 				
 		</form><!-- close madlib-input -->
@@ -83,7 +85,7 @@
 			"<span id="output_name_2"></span> has a sense of humor. For example,  "<span id="output_name_3"></span> usually names projects after lovely creatures, such as Hello Kitty. <span id="output_godzilla"></span> <span id="output_kingkong"></span> <span id="output_mothra"></span> <span id="output_gamera"></span> -Ben<br><br>
 
 			As a result, our judges decided to give this award to you!<br>
-			Again, congratulations!!<br><br>
+			Again, congratulations!!<br><br><br>
 
 			Best Regards,<br>
 			The Madlib Group
