@@ -78,3 +78,5 @@ function validator() {
 $(document).ready(function() {
 	$("#madlib-input").submit(validator);
 });
+
+// test
