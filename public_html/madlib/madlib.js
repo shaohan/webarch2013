@@ -46,7 +46,7 @@ function validator() {
 
 
 	// validate monster
-	if ($("#monster input[type='checkbox']:checked").val().length > 0) {
+	if ($("#monster input[type='checkbox']:checked").val().length = 0) {
 		alert("Please select at least one monster.");
 		return false;
 	}
