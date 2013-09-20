@@ -19,25 +19,27 @@
 
 			<!-- title -->
 			<p>Title:<br>
-				<label for="ms">Ms.</label>
-					<input type="radio" name="title" value="Ms."><br>		
-				<label for="mr">Mr.</label>
-					<input type="radio" name="title" value="Mr."><br>
-				<label for="mr">Mrs.</label>
-					<input type="radio" name="title" value="Mrs."><br>
-				<label for="mr">Dr.</label>
-					<input type="radio" name="title" value="Dr.">
+				<span id="title">
+					<label>Ms.</label>
+						<input type="radio" name="title" value="Ms."><br>		
+					<label>Mr.</label>
+						<input type="radio" name="title" value="Mr."><br>
+					<label>Mrs.</label>
+						<input type="radio" name="title" value="Mrs."><br>
+					<label>Dr.</label>
+						<input type="radio" name="title" value="Dr.">
+				</span><!-- close title -->
 			</p>
 
 			<!-- year -->
 			<p>
-				<label for="year">Please enter today's year in 4 digits (ex: 2010):</label>
+				<label for="year">Please enter today's year in 4 digits (ex: 2013):</label>
 				<input type="text" id="year">
 			</p>
 
 			<!-- occupation -->
 			<label for="occupation">Please enter your occupation:</label>
-				<input type="text" id="your_name">
+				<input type="text" id="occupation">
 
 			<!-- see a coachroch -->
 			<p>
@@ -51,50 +53,50 @@
 
 
 			<!-- monster's name -->
-			<p>Which of the following monsters do you like?</p>
-				<label for="godzilla">Godzilla</label>
-					<input type="checkbox" value="Godzilla." id="godzilla">
-				<label for="kingkong">King Kong</label>
-					<input type="checkbox" value="King Kong." id="kingkong">
-				<label for="mothra">Mothra</label>
-					<input type="checkbox" value="Mothra." id="mothra">
-				<label for="gamera">Gamera</label>
-					<input type="checkbox" value="Gamera." id="gamera">
+			<p>Which of the following monsters do you like?<br>
+				
+					<label for="godzilla">Godzilla</label>
+						<input type="checkbox" value="Godzilla." id="godzilla"><br>
+					<label for="kingkong">King Kong</label>
+						<input type="checkbox" value="King Kong." id="kingkong"><br>
+					<label for="mothra">Mothra</label>
+						<input type="checkbox" value="Mothra." id="mothra"><br>
+					<label for="gamera">Gamera</label>
+						<input type="checkbox" value="Gamera." id="gamera">
 			</p><br>
 
-			<label for="submit"><h3>Ready? Click below to submit your application now!</h3></label>
+			<label>Ready? Click below to submit your application now!</label>
 				<input type="submit" value="Apply">
 				
 		</form><!-- close madlib-input -->
 
 
+		<br><br>
+
+		<div id="madlib-output" style="display: none">
+			<p>Dear <span id="output_title"></span> <span id="output_name"></span>:</p>
+
+		<p>We are pleased to inform you that you have been selected as "<span id="output_year"></span> Most charming <span id="output_occupation"></span> in the world"!<br>
+			During the past 3 monthes, we have received tons of recommendations from your colleagues and friends, such as:<br><br>
+
+			"<span id="output_name_1"></span> really does a great job on <span id="output_reaction"></span> annoying clients. - Irene<br>
+			"<span id="output_name_2"></span> has a sense of humor. For example,  "<span id="output_name_3"></span> usually names projects after lovely creatures, such as Hello Kitty. <span id="output_godzilla"></span> <span id="output_kingkong"></span> <span id="output_mothra"></span> <span id="output_gamera"></span> -Ben<br><br>
+
+			As a result, our judges decided to give this award to you!<br>
+			Again, congratulations!!<br><br>
+
+			Best Regards,<br>
+			The Madlib Group
+		</p>
+
+		</div><!-- close madlib-output -->
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="madlib.js"></script>
+
+
 	</body>
 
 
-
-
 </html>
-
-
-
-<!-- 
-	
-Dear (Mr/Ms/Dr) (your name):
-
-We are pleased to inform you that you have been selected as "(YEAR) Most Chariming (your occupation) in the world!". 
-During the past 90 days, we have received tons of recommendations from your collegues and friends, such as: 
-
-"(your name) really does a great job on (your reaction when seeing a coachroch)!" his boss. - Irene
-"(your name) has a sense of humor. For example, he names all his projects after lovely creatures, such as (monster's name)." - Ben
-"We all love (your first name)" since (your first name) usually buys (coffee's name) for us!" - Larry
-
-
-As a result, our judges have decided to give the award to you! 
-Again, congratulations!
-
-
-Best Regards,
-The Medlib Group
-
-
-	-->
