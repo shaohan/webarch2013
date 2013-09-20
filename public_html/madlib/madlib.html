@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Just for fun Madlib by SC</title>
+		<link rel="stylesheet" type="text/css" href="madlib.css">
+	</head>
+
+	<body>
+
+		<form id="madlib-input">
+			<h3>Please full out this form to apply for an award!</h3>
+			
+			<!-- your_name -->
+			<p>
+				<label for="your_name">Your name:</label>
+					<input type="text" id="your_name">
+			</p>
+
+			<!-- title -->
+			<p>Title:<br>
+				<span id="title">
+					<label>Ms.</label>
+						<input type="radio" name="title" value="Ms." checked="checked"><br>		
+					<label>Mr.</label>
+						<input type="radio" name="title" value="Mr."><br>
+					<label>Mrs.</label>
+						<input type="radio" name="title" value="Mrs."><br>
+					<label>Dr.</label>
+						<input type="radio" name="title" value="Dr.">
+				</span><!-- close title -->
+			</p>
+
+			<!-- year -->
+			<p>
+				<label for="year">Please enter today's year in 4 digits (ex: 2013):</label>
+				<input type="text" id="year">
+			</p>
+
+			<!-- occupation -->
+			<label for="occupation">Please enter your occupation:</label>
+				<input type="text" id="occupation">
+
+			<!-- see a coachroch -->
+			<p>
+				<label for="reaction">What's your reaction when seeing a cockroach?</label>
+					<select name="reaction" id="reaction">
+						<option value="yelling at">Yelling</option>
+						<option value="ignoring">Ignoring</option>
+						<option value="being friendly with">Being friendly</option>
+					</select>
+			</p>
+
+
+			<!-- monster's name -->
+			<p>Which of the following monsters do you like?<br>
+				<span id="monster">
+					<label for="godzilla">Godzilla</label>
+						<input type="checkbox" value="Godzilla." id="godzilla"><br>
+					<label for="kingkong">King Kong</label>
+						<input type="checkbox" value="King Kong." id="kingkong"><br>
+					<label for="mothra">Mothra</label>
+						<input type="checkbox" value="Mothra." id="mothra"><br>
+					<label for="gamera">Gamera</label>
+						<input type="checkbox" value="Gamera." id="gamera">
+				</span><!-- close monster -->
+			</p><br>
+
+			<label>Ready? Click below to submit your application now!</label><br><br>
+				<input type="submit" value="Apply">
+				
+		</form><!-- close madlib-input -->
+
+
+		<br><br>
+
+		<div id="madlib-output" style="display: none">
+			<p>Dear <span id="output_title"></span> <span id="output_name"></span>:</p>
+
+		<p>We are pleased to inform you that you have been selected as "<span id="output_year"></span> Most charming <span id="output_occupation"></span> in the world"!<br>
+			During the past 3 monthes, we have received tons of recommendations from your colleagues and friends, such as:<br><br>
+
+			"<span id="output_name_1"></span> really does a great job on <span id="output_reaction"></span> annoying clients. - Irene<br>
+			"<span id="output_name_2"></span> has a sense of humor. For example,  "<span id="output_name_3"></span> usually names projects after lovely creatures, such as Hello Kitty. <span id="output_godzilla"></span> <span id="output_kingkong"></span> <span id="output_mothra"></span> <span id="output_gamera"></span> -Ben<br><br>
+
+			As a result, our judges decided to give this award to you!<br>
+			Again, congratulations!!<br><br><br>
+
+			Best Regards,<br>
+			The Madlib Group
+		</p>
+
+		</div><!-- close madlib-output -->
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="madlib.js"></script>
+
+
+	</body>
+
+
+</html>

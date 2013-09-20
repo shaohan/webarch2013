@@ -1,0 +1,10 @@
+body {
+	font-family: Verdana, Arial, Sans-serif;
+	background-color: #FFFFE0;
+}
+
+#footer {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: center;
+}

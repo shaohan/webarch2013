@@ -1,0 +1,21 @@
+body {
+	font-family: "Open Sans";
+	background-color: #CCC;
+}
+
+
+h3 {
+	color: #696969;
+}
+
+form {
+	padding-left: 30px;
+}
+
+
+
+#madlib-output {
+	background-color: #FFF;
+	padding: 30px;
+
+}
