@@ -1,0 +1,76 @@
+
+1) Using 127.0.0.1 $FLASK_PORT
+
+1-1) What is the return code for GET /home HTTP/1.1?
+
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 228
+Server: Werkzeug/0.8.3 Python/2.7.3
+Date: Fri, 20 Sep 2013 23:48:31 GMT
+
+<!DOCTYPE html>
+<html lang="en-us">
+     <head>
+          <meta charset="utf-8">
+          <title>i253</title>
+          <link rel="stylesheet" href="static/css/default.css">
+     </head>
+     <body>
+          <div class="container">
+               Hello Jim
+          </div>
+     </body>
+</html>Connection closed by foreign host.
+
+
+
+1-2) What is the return code for GET /wiki HTTP/1.1?
+
+HTTP/1.0 302 FOUND
+Content-Type: text/html; charset=utf-8
+Content-Length: 253
+Location: http://en.wikipedia.org
+Server: Werkzeug/0.8.3 Python/2.7.3
+Date: Fri, 20 Sep 2013 23:48:49 GMT
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to target URL: <a href="http://en.wikipedia.org">http://en.wikipedia.org</a>.  If not click the link.</p>Connection closed by foreign host.
+
+
+
+1-2-1) What is the next HTTP statement a browser would send after this return code?
+
+GET / HTTP/1.1
+Host: en.wikipedia.org
+
+
+
+1-3) What is the return code for PUT /wiki HTTP/1.1?
+
+HTTP/1.0 405 METHOD NOT ALLOWED
+Content-Type: text/html
+Allow: HEAD, OPTIONS, GET
+Content-Length: 182
+Server: Werkzeug/0.8.3 Python/2.7.3
+Date: Fri, 20 Sep 2013 23:51:58 GMT
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method PUT is not allowed for the requested URL.</p>
+Connection closed by foreign host.
+
+
+
+2)  Explain what happens when your browser loads http://people.ischool.berkeley.edu/~<USER>/server/wiki from sending the request to loading HTML
+
+    Answer: The page is redirected to http://en.wikipedia.org/wiki/Main_Page  
+
+
+
+3) What is the return code for http://people.ischool.berkeley.edu/~<USER>/server/ ?
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN"> <title>404 Not Found</title> <h1>Not Found</h1> <p>The requested URL was not found on the server.</p><p>If you entered the URL manually please check your spelling and try again.</p>  
