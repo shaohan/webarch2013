@@ -92,6 +92,9 @@
 	- Including the Content-Type in your submission
 
 
+	Content-Type: image/png
+
+
 
 
 
