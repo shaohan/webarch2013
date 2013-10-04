@@ -33,7 +33,7 @@
 
 
 	PUT /wiki HTTP/1.1
-	Host:people.ischool.berkeley.edu
+	Host: people.ischool.berkeley.edu
 	Content-Length: 37
 	Content-Type: application/x-www-form-urlencoded
 
@@ -64,9 +64,34 @@
 
 
 
+
 3. Use a POST to update the redirect target of http://people.ischool.berkeley.edu/~<USER>/server/wiki to another new location.
+
+	POST /wiki HTTP/1.1
+	Host: people.ischool.berkeley.edu
+	Content-Length: 41
+	Content-Type: application/x-www-form-urlencoded
+
+	url=http://www.zacharys.com/berkeley.html
+
+	Result as below:
+	=================
+	HTTP/1.0 200 OK
+	Content-Type: text/html; charset=utf-8
+	Content-Length: 52
+	Server: Werkzeug/0.8.3 Python/2.7.3
+	Date: Fri, 04 Oct 2013 03:06:41 GMT
+
+	Stored wiki => http://www.zacharys.com/berkeley.htmlConnection closed by foreign host.
+
+
 
 
 4. Update app.py to correctly return an image from http://people.ischool.berkeley.edu/~<USER>/server/i253.
-	- User your browser to test
+	- Use your browser to test
 	- Including the Content-Type in your submission
+
+
+
+
+
