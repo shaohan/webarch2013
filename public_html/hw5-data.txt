@@ -32,12 +32,36 @@
 2. Use a PUT request to set the redirect target on http://people.ischool.berkeley.edu/~<USER>/server/wiki
 
 
-	
+	PUT /wiki HTTP/1.1
+	Host:people.ischool.berkeley.edu
+	Content-Length: 37
+	Content-Type: application/x-www-form-urlencoded
+
+	url=http://cheeseboardcollective.coop
+
+	Result as below:
+	=================
+	HTTP/1.0 200 OK
+	Content-Type: text/html; charset=utf-8
+	Content-Length: 48
+	Server: Werkzeug/0.8.3 Python/2.7.3
+	Date: Fri, 04 Oct 2013 02:34:14 GMT
+
+	Stored wiki => http://cheeseboardcollective.coopConnection closed by foreign host.
 
 
 
 
 2-1) How do you verify this change?
+
+	 1. Check server records: The following message should be found:
+
+	    DEBUG in app [./server/app.py:40]:
+		Redirecting to http://cheeseboardcollective.coop
+
+	 2. Open the browser and type the URL you would like to test on, 
+	    the page should be redirected to the assigned target page after submitting the URL.
+
 
 
 3. Use a POST to update the redirect target of http://people.ischool.berkeley.edu/~<USER>/server/wiki to another new location.
