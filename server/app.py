@@ -74,7 +74,7 @@ def i253():
                 '-raise', '30',
                 'png:-']), 200);
     # Comment in to set header below
-    # resp.headers['Content-Type'] = '...'
+    resp.headers['Content-Type'] = 'image/png'
 
     return resp
 
