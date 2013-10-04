@@ -1,0 +1,48 @@
+1. What HTTP command is used to make the /home resource respond with your full name (including spaces), the title of the page should be the full title of this class.
+
+	GET /home?name=Shaohan%20Chen&title=Web%20Architecture%202013 HTTP/1.1
+	Host: people.ischool.berkeley.edu
+
+
+	Result as below:
+	=================
+	HTTP/1.0 200 OK
+	Content-Type: text/html; charset=utf-8
+	Content-Length: 254
+	Server: Werkzeug/0.8.3 Python/2.7.3
+	Date: Fri, 04 Oct 2013 02:04:58 GMT
+
+	<!DOCTYPE html>
+	<html lang="en-us">
+		<head>
+			<meta charset="utf-8">
+			<title>Web Architecture 2013</title>
+			<link rel="stylesheet" href="static/css/default.css">
+		</head>
+		<body>
+			<div class="container">
+				Hello Shaohan Chen
+			</div>
+		</body>
+	</html>Connection closed by foreign host.
+
+
+
+
+2. Use a PUT request to set the redirect target on http://people.ischool.berkeley.edu/~<USER>/server/wiki
+
+
+	
+
+
+
+
+2-1) How do you verify this change?
+
+
+3. Use a POST to update the redirect target of http://people.ischool.berkeley.edu/~<USER>/server/wiki to another new location.
+
+
+4. Update app.py to correctly return an image from http://people.ischool.berkeley.edu/~<USER>/server/i253.
+	- User your browser to test
+	- Including the Content-Type in your submission
