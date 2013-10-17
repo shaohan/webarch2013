@@ -1,0 +1,7 @@
+Q: What’s the diﬀerence between Yelp’s homepage compressed and uncompressed?
+    •Use curl - downloads items from internet
+    •man curl to get help
+    •-v: provide verbose output
+    •-H: specify HTTP headers
+    •>: redirect command output to ﬁle
+
