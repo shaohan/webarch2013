@@ -1,0 +1,29 @@
+Q: What’s the diﬀerence between Yelp’s homepage compressed and uncompressed?
+    •Use curl - downloads items from internet
+    •man curl to get help
+    •-v: provide verbose output
+    •-H: specify HTTP headers
+    •>: redirect command output to ﬁle
+
+
+A:
+
+Uncompressed
+=============
+To get uncompressed Yelp's homepage, I entered the following command on my local terminal:
+
+    $ curl -v http://www.yelp.com/ > uncompressed.html
+
+The file I got is a html file called "uncompressed.html" and the size of the file is 90kb.
+
+
+Compressed
+===========
+To get compressed Yelp's homepage, I entered the following command on my local temrinal:
+
+    $ curl -v -H "Accept-Encoding: gzip" http://www.yelp.com/ > compressed.gzip
+
+The file I got is a .gzip file called "compressed.gzip" and the size of the file is 19kb.
+
+Since this is a zip file, I tried to extract it and got a new document file named "compressed".
+The size of the file "compressed" is 89kb.
