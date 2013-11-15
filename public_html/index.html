@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Shaohan's Personal Page</title>
+        <title>Shaohan Chen's Personal Page</title>
+        <!-- meta -->
         <meta charset="utf-8">
+        <meta name="description" content="The personal page of Shaohan Chen. Shaohan Che has over five years experience in User Experience and Web Product Design in multicultural environment (especially Greater China Area, Japan and US) with skills of business development, project management and marketing.">
         <!-- CSS sheets -->
         <link rel="stylesheet" type="text/css" href="general.css">
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
 
-    <body>  	
+    <body>
     	<div id="nav">
-    		<h1>Shaohan's Personal Page</h1>
+    		<h1>Shaohan's Personal Page - Info253 Assignment 9</h1>
     		<ul>
     			<li><a href="#">About</a></li>
     			<li><a href="#">Portfolio</a></li>
     			<li><a href="#">Contact</a></li>
     		</ul>
     	</div><!-- close nav div -->
-    	
+
     	<div id="introduction">
-    		<p style="color: #191970; padding-top: 30px; font-size: 20px;">Hello world! My name is Shaohan and I'm currently studying in UC Berkeley.</p>
-    		<p style="width: 700px; margin: auto; padding-bottom: 10px;">Phasellus at odio sollicitudin, placerat magna et, semper erat. Nulla hendrerit id risus id placerat. Etiam convallis ut quam eu dignissim. Curabitur eu arcu molestie, scelerisque nibh consequat, bibendum lacus. Vestibulum at consectetur odio. Etiam semper nulla a lectus elementum convallis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce id lectus quis nunc luctus pharetra in blandit nisi. Etiam aliquet odio ut turpis egestas, nec bibendum augue adipiscing. Morbi dui velit, rhoncus nec ligula id, condimentum sagittis sapien.</p>
+
+        <div itemscope itemtype="http://schema.org/Person">
+      		<p>Hello world! My name is <span itemprop="name">Shaohan Chen</span> and I'm currently a <span itemprop="jobTitle">Student</span> at <span itemprop="affiliation">UC Berkeley School of Information</span>.<br> I am originally from <span itemprop="nationality">Taiwan</span> and earned my bachelor's degree at <span itemprop="alumniOf"> National Taiwan University</span>.<br>You can reach me at <span itemprop="email">shaohan at ischool dot berkeley dot edu</span>.</p><br>
+        </div><!-- itemscope/person -->
+
+        <div itemscope itemtype="http://schema.org/Organization">
+          <img itemprop="logo" src="http://upload.wikimedia.org/wikipedia/en/d/de/Gracenote_logo.png" alt="gn_logo"><br>
+          <p>I used to worked at
+            <span itemprop="name">Gracenote</span> (<a href="http://www.gracenote.com" itemprop="url">www.gracenote.com</a>), a company which provides digital entertainment content solutions such as music recognition technology (<span itemprop="brand">MusicID&reg;</span>).<br>
+            For more information, please contact <span itemprop="telephone">510-428-7200</span>.
+          </p>
+        </div><!-- itemscope/organization -->
+
+        <div itemscope itemtype="http://schema.org/CreativeWork">
+          <p>In my spare time I enjoy listening to music and watching movies.<br>
+           One of my favorite movies is an <span itemprop="inLanguage">English</span> <span itemprop="genre">comedy</span> movie named <span itemprop="name"> Babe</span>, which was first published on <span itemprop="datePublished"> August 4, 1995</span> by <span itemprop="publisher">Universal Pictures</span>.<br>
+        </div><!-- itemscope/creativework -->
+
 
     		<div class="image-wrapper">
 		    	<img src="http://people.ischool.berkeley.edu/~alsmola/southhallbear/southhall.jpg" alt="southhall">
@@ -43,11 +61,11 @@
    			<h2>My Favorite Sites:</h2>
    			<a href="http://www.google.com/">Google</a><br>
    			<a href="http://www.4sq.com/">Foursquare</a><br>
-   			<a href="http://www.flickr.com/">Flickr</a><br><br>    		
+   			<a href="http://www.flickr.com/">Flickr</a><br><br>
    		</div><!-- close partners div -->
 
    		<div id="footer">
-   			<p>(c)2013 Shaohan Chen. All Rights Reserved</p>         
+   			<p>(c)2013 Shaohan Chen. All Rights Reserved</p>
    		</div><!-- close footer div -->
 
     </body>
