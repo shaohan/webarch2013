@@ -1,0 +1,60 @@
+14. Fill in the missing words describe TCP
+
+My original answer:
+==================== 
+Correctness - 
+Ensures bits in data packet are same as those sent by using a *protocal* 
+
+Modified answer:
+=================
+Correctness -
+Ensures bits in data packet are same as those sent by using a *checksum*
+
+Reason:
+TCP (Transport Control Protocol) ensures data correctness and prevents data corruption, and the way we know if the data we receive is the same as was sent is by using a checksum. Checksum first takes the bits in a message then add them up and append the sum. System can then detect errors that may have been introduced during the transmission.
+
+
+
+15. Mark (T)rue or (F)alse
+
+My original answer:
+====================
+DNS uses on IP - *False*
+HTTP uses on DNS - *True*
+
+Modified answer:
+=================
+DNS uses on IP - *True*
+HTTP uses on DNS - *False* 
+
+Reason:
+- DNS uses on IP: DNS is an Internet service that translates easily memorized domain names/hostnames to numerical IP addresses. As a result, DNS uses on IP.
+- HTTP does not use on DNS: Since we can visit a website without DNS through HTTP as long as we know what the IP address is, but cannot use DNS without HTTP to display the page because there is no method to send request to the server. 
+
+
+
+18. Fill in the request to PUT data to a webserver
+    We'd like to set the name parameter to your full name, the class parameter to "i253".
+
+My original answer:
+====================
+PUT /student HTTP/1.1
+*Host: wherethewebsiteis.com
+
+ name=Shaohan%20Chen&class=i253*
+
+
+Modified answer:
+=================
+PUT /student HTTP/1.1
+*Host: wherethewebsiteis.com
+ Content-Length: 30 
+ Content-Type: text/html; charset=utf-8
+
+ name=Shaohan%20Chen&class=i253*
+
+Reason: For PUT and POST method, "Host", "Content-Length" and "Content-Type" are three essential data in header field for sending request to the webserver.
+
+
+
+
