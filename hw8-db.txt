@@ -1,0 +1,24 @@
+1. SELECT: How many links were added after 2013-10-14?
+
+   Answer: 13 rows
+   Queries: SELECT * FROM links WHERE created > '2013-10-14';
+
+
+2. SELECT: How many links that were added before 2013-10-14 have fewer than 40 hits?
+
+   Answer: 11 rows
+   Queries: SELECT * FROM links where created < '2013-10-14' AND hit_count < 40;
+
+
+3. INSERT: Insert your own URL with a date before 2013-10-14 with greater than 40 hits. Is it possible that someone querying the database at the same time could see your insert partially complete (eg. only see some fileds filled in)? What database property is this related to?
+
+   Queries: INSERT INTO links VALUE ("http://www.amazon.co.jp", "azjp", 168, "2013-03-20");   
+   Answer: 1) No   2) Atomicity
+
+
+4. UPDATE: Increment the hit_count for only your new row. What is the new count?
+
+   Answer: The new count is 170
+   Queries: UPDATE links SET hit_count = '170' WHERE short_url = 'azjp' AND created = '2013-03-20';
+
+
