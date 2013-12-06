@@ -6,7 +6,7 @@ user ID appended to each Vote/Visit.  Run like so:
 
     python combine_user_visits.py mrjob/anonymous-msweb.data > user-visits_msweb.data
 """
-    
+
 import csv
 import fileinput
 from sys import stdout
@@ -32,13 +32,13 @@ def main():
         if cell[0] == 'C':
             ###
             # FILL IN by replacing below:
-            pass
+            current_user = cell[1]
             # What should we update when we see a new 'C' row?
             ##/
         elif cell[0] == 'V':
             ###
             # FILL IN by replacing below:
-            pass
+            cell.append(current_user)
             # What should we update when we see a new 'V' row?
             ##/
 
